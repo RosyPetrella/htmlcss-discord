@@ -242,6 +242,7 @@ h3 {
     width: 1.5rem;
 }
 
+
 .img-social {
     width: 1.3rem;
     padding-top:1rem;
@@ -305,6 +306,9 @@ h3 {
 }
 
 /* Footer */ 
+footer {
+    background-color: var(--main-dark);
+}
 
 /*TABLE*/
 .table {
