@@ -7,6 +7,7 @@
     --bg-header: #3161e0;
     --main-light: #ffffff;
     --main-dark: #23272a;
+    --bg-light: #f6f6f6;
 
 }
 
@@ -23,6 +24,13 @@ html {
 /*Utility*/
 .font {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}
+.bg-light{
+    background-color: var(--bg-light);
+}
+
+.bg-lighter {
+    background-color: var(--main-light);
 }
 
 /*.debug *{
@@ -151,7 +159,7 @@ html {
 }
 
 .bg-odd {
-    background-color: var(--bg-odd);
+    background-color: var(--);
 }
 .bg-even {
     background-color: var(--bg-even);
@@ -186,29 +194,47 @@ html {
 
 .big-part{
     min-width: 60%;
-    background-color: var(--main-light);
-    padding: 5rem;
-
-    img {
-        margin-right: 2rem;
-    
-    }
+    padding: 5rem;   
 }
+
 .small-part {
     min-width: 40%;
-    background-color: var(--main-light);
     padding: 5rem ;
+}
 
-    h2 {
-        font-size: 2.5rem ;
-        margin-left: 2rem;
-        padding: 0rem 1.5rem;
-    }
+/*H2*/
+.h2-left {
+    font-size: 2.5rem ;
+    margin-left: 2rem;
+    padding: 0rem 1.5rem;
+}
 
-    p {
-        padding: 0rem 3rem;
-        line-height: 25px;
-    }
+.h2-right {
+    font-size: 2.5rem ;
+    margin-left: 2rem;
+    padding: 0rem 1.5rem;
+}
+
+/*P*/
+.p-left {
+    padding: 0rem 1.5rem;
+    line-height: 25px;
+    margin-left: 2rem;
+}
+
+.p-right {
+    padding: 0rem 3rem;
+    line-height: 25px;
+}
+
+/*IMG*/
+#img-invite {
+    margin-right: 2rem;
+}
+
+#img-community {
+    margin: 0px;
+    padding-right: 3rem;
 
 }
 
