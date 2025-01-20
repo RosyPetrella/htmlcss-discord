@@ -1,0 +1,165 @@
+:root {
+    --bg-odd: white;
+    --bg-even: lightgray;
+    --bg-dark: rgb(52, 51, 51);
+    --bg-b-p: lightblue;
+    --bg-s-p: pink;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+.debug *{
+    border-style: dashed;
+}
+
+.big-container {
+    min-height: 100%;
+}
+
+.small-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+
+}
+.list-style {
+    list-style: none;
+}
+
+
+/* Header */
+.top {
+    background-color: lightblue;
+    padding: 0.5rem;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around; 
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: yellow;
+    line-height: 30px;
+    gap: 0px;
+    
+    
+    
+    #logo {
+        text-align: left;
+        min-width: 20%;
+    }
+    
+    #link {
+        text-align: center;
+        min-width: 59%;
+
+        a {
+            text-decoration: none;;
+        }
+    }
+    
+    #login
+        {
+            text-align: right;
+            min-width: 20%;
+        }
+}
+
+/* Main */
+.jumbotron {
+    background-color: darkblue;
+}
+
+#jumbo-section {
+    display: flex;
+    min-height: 300px;
+    justify-content: center;
+    background-color: palevioletred;
+    margin: 2.5% 25%;
+}
+
+.bg-odd {
+    background-color: var(--bg-odd);
+}
+.bg-even {
+    background-color: var(--bg-even);
+}
+
+.bg-dark {
+    background-color: rgb(54, 53, 53);
+}
+
+.section {
+    display: flex;
+    width: 65%;
+    min-height: 400px;
+    margin: 2.5% 0;
+}
+
+#tech {
+    min-height: 700px;
+    width: 65%;
+    margin: 2.5% 0;
+    background-color: green;
+}
+
+.big-part{
+    min-width: 60%;
+    background-color: var(--bg-b-p);
+}
+.small-part {
+    min-width: 40%;
+    background-color: var(--bg-s-p);
+}
+
+.table {
+    display: flex;
+    width: 65%;
+    min-height: 450px;
+    margin: 1% 0 2.5% 0;
+
+    .big-table-part {
+        flex-grow: 2;
+        background-color: salmon;
+    }
+
+    .small-table-part {
+        flex-grow: 1;
+        background-color: aquamarine;
+    }
+}
+
+/* Footer */ 
+    .bottom {
+        background-color: rgb(52, 51, 51);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 80px;
+    
+        .bottom-bar{
+            display: flex;
+            background-color: aqua;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            width: 65%;
+        }
+        .bm-btn {
+            background-color: pink;
+            padding: 5px;
+        }
+    }
+
+
+    
