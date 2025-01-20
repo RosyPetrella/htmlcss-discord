@@ -4,6 +4,10 @@
     --bg-dark: rgb(52, 51, 51);
     --bg-b-p: lightblue;
     --bg-s-p: pink;
+    --bg-header: #3161e0;
+    --main-light: #ffffff;
+    --main-dark: #23272a;
+
 }
 
 body {
@@ -16,9 +20,9 @@ html {
     height: 100%;
 }
 
-.debug *{
+/*.debug *{
     border-style: dashed;
-}
+}*/
 
 .big-container {
     min-height: 100%;
@@ -38,7 +42,7 @@ html {
 
 /* Header */
 .top {
-    background-color: lightblue;
+    background-color: var(--bg-header);
     padding: 0.5rem;
     
 }
@@ -46,32 +50,47 @@ html {
 .nav {
     display: flex;
     justify-content: space-around; 
-    margin-right: 20%;
-    margin-left: 20%;
-    background-color: yellow;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: var(--bg-header);
     line-height: 30px;
     gap: 0px;
+    align-items: center;
     
     
     
     #logo {
         text-align: left;
-        min-width: 20%;
+        flex-grow: 1;
     }
     
     #link {
         text-align: center;
-        min-width: 59%;
+        flex-grow: 2;
 
         a {
-            text-decoration: none;;
+            text-decoration: none;
+            color: var(--main-light);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 1rem;
         }
     }
     
     #login
         {
             text-align: right;
-            min-width: 20%;
+            flex-grow: 1;
+
+            #btn-header {
+                background-color: var(--main-light);
+                color: var(--main-dark);
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 50px;
+                padding: 10px;
+                border-style: none;
+            }
         }
 }
 
