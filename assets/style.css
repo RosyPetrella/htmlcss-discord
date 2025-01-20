@@ -35,7 +35,7 @@ html {
 
 .small-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     min-height: 100px;
 
@@ -166,7 +166,16 @@ html {
     width: 65%;
     min-height: 400px;
     margin: 2.5% 0;
+    justify-content: center;
 }
+
+/*
+#invite-only {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+*/
 
 #tech {
     min-height: 700px;
@@ -177,11 +186,30 @@ html {
 
 .big-part{
     min-width: 60%;
-    background-color: var(--bg-b-p);
+    background-color: var(--main-light);
+    padding: 5rem;
+
+    img {
+        margin-right: 2rem;
+    
+    }
 }
 .small-part {
     min-width: 40%;
-    background-color: var(--bg-s-p);
+    background-color: var(--main-light);
+    padding: 5rem ;
+
+    h2 {
+        font-size: 2.5rem ;
+        margin-left: 2rem;
+        padding: 0rem 1.5rem;
+    }
+
+    p {
+        padding: 0rem 3rem;
+        line-height: 25px;
+    }
+
 }
 
 .table {
