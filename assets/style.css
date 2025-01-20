@@ -189,7 +189,10 @@ html {
     min-height: 700px;
     width: 65%;
     margin: 2.5% 0;
-    background-color: green;
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .big-part{
@@ -215,16 +218,27 @@ html {
     padding: 0rem 1.5rem;
 }
 
+.h2-center {
+    font-size: 2.5rem ;
+}
+
 /*P*/
 .p-left {
     padding: 0rem 1.5rem;
     line-height: 25px;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 .p-right {
     padding: 0rem 3rem;
     line-height: 25px;
+}
+
+.p-center {
+    line-height: 25px;
+    padding: 0rem 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /*IMG*/
